@@ -14,6 +14,9 @@ const connect = function () {
     conn.write("Name: TE");
 
   });
+  conn.on("data", (data) => {
+    console.log("Server says: ", data);
+  });
   
 // interpret incoming data as text
 conn.setEncoding("utf8");
