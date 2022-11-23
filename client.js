@@ -14,34 +14,7 @@ const connect = function () {
     conn.write("Name: TE");
 
   });
-  conn.on("connect", (data) => {
-    // setInterval(() => {
-    //   conn.write("Move: up")
-    // }, 100)
-    // setInterval(() => {
-    //   conn.write("Move: right")
-    // }, 150)
-    
-    setTimeout(() => {
-    conn.write("Move: up");
-    }, 200)
-    setTimeout(() => {
-      conn.write("Move: left");
-    }, 400)
-    setTimeout(() => {
-      conn.write("Move: down");
-    }, 600)
-    setTimeout(() => {
-      conn.write("Move: left");
-    }, 800)
-    setTimeout(() => {
-      conn.write("Move: down");
-    }, 1000)
-    setTimeout(() => {
-      conn.write("Move: left");
-    }, 1200)
   
-  });
 // interpret incoming data as text
 conn.setEncoding("utf8");
 
